@@ -8,6 +8,7 @@ spec:
         - frontend-2.2.1
         - frontend-2.3.0
         - frontend-2.4.1
+        - frontend-2.5.1
       compDefs:
         - rw-frontend-{{ .Chart.Version}}
   releases:
@@ -23,3 +24,7 @@ spec:
       serviceVersion: 2.4.1
       images:
         frontend: docker.risingwave.com/risingwavelabs/risingwave:v2.4.1
+    - name: frontend-2.5.1
+      serviceVersion: 2.5.1
+      images:
+        frontend: docker.risingwave.com/risingwavelabs/risingwave:v2.5.1

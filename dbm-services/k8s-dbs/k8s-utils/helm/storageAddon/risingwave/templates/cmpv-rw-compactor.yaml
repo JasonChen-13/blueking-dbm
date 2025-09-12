@@ -8,6 +8,7 @@ spec:
         - compactor-2.2.1
         - compactor-2.3.0
         - compactor-2.4.1
+        - compactor-2.5.1
       compDefs:
         - rw-compactor-{{ .Chart.Version}}
   releases:
@@ -23,3 +24,7 @@ spec:
       serviceVersion: 2.4.1
       images:
         compactor: docker.risingwave.com/risingwavelabs/risingwave:v2.4.1
+    - name: compactor-2.5.1
+      serviceVersion: 2.5.1
+      images:
+        compactor: docker.risingwave.com/risingwavelabs/risingwave:v2.5.1

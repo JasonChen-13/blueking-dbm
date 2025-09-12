@@ -8,6 +8,7 @@ spec:
         - meta-2.2.1
         - meta-2.3.0
         - meta-2.4.1
+        - meta-2.5.1
       compDefs:
         - rw-meta-{{ .Chart.Version}}
   releases:
@@ -23,3 +24,7 @@ spec:
       serviceVersion: 2.4.1
       images:
         meta: docker.risingwave.com/risingwavelabs/risingwave:v2.4.1
+    - name: meta-2.5.1
+      serviceVersion: 2.5.1
+      images:
+        meta: docker.risingwave.com/risingwavelabs/risingwave:v2.5.1

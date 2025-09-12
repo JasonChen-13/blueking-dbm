@@ -8,6 +8,7 @@ spec:
         - compute-2.2.1
         - compute-2.3.0
         - compute-2.4.1
+        - compute-2.5.1
       compDefs:
         - rw-compute-{{ .Chart.Version}}
   releases:
@@ -23,3 +24,7 @@ spec:
       serviceVersion: 2.4.1
       images:
         compute: docker.risingwave.com/risingwavelabs/risingwave:v2.4.1
+    - name: compute-2.5.1
+      serviceVersion: 2.5.1
+      images:
+        compute: docker.risingwave.com/risingwavelabs/risingwave:v2.5.1
