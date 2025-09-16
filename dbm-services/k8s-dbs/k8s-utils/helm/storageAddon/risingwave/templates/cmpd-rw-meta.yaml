@@ -39,10 +39,6 @@ spec:
         imagePullPolicy: IfNotPresent
         securityContext:
           allowPrivilegeEscalation: false
-          capabilities:
-            drop:
-              - ALL
-          privileged: false
         command:
           - /risingwave/bin/risingwave
           - meta-node

@@ -17,7 +17,7 @@ componentList:
     serviceVersion: "2.2.1-2.0.0"
     services:
       - name: frontend
-        serviceType: ClusterIP
+        serviceType: NodePort
         annotations:
     env:
     replicas: 1
