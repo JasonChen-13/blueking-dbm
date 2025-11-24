@@ -1,0 +1,35 @@
+apiVersion: apps.kubeblocks.io/v1alpha1
+kind: ComponentVersion
+metadata:
+  name: surrealdb-tikv-{{ .Chart.Version}}
+spec:
+  compatibilityRules:
+    - releases:
+        - surreal-3.0.0-alpha.13
+        - surreal-2.3.7
+        - surreal-2.3.2
+        - surreal-2.2.1
+        - surreal-2.2.0
+      compDefs:
+        - surreal-tikv-{{ .Chart.Version}}
+  releases:
+    - name: surreal-3.0.0-alpha.13
+      serviceVersion: 3.0.0-alpha.13
+      images:
+        surreal: docker.io/surrealdb/surrealdb:v3.0.0-alpha.13
+    - name: surreal-2.3.7
+      serviceVersion: 2.3.7
+      images:
+        surreal: docker.io/surrealdb/surrealdb:v2.3.7
+    - name: surreal-2.3.2
+      serviceVersion: 2.3.2
+      images:
+        surreal: docker.io/surrealdb/surrealdb:v2.3.2
+    - name: surreal-2.2.1
+      serviceVersion: 2.2.1
+      images:
+        surreal: docker.io/surrealdb/surrealdb:v2.2.1
+    - name: surreal-2.2.0
+      serviceVersion: 2.2.0
+      images:
+        surreal: docker.io/surrealdb/surrealdb:v2.2.0
